@@ -5,6 +5,26 @@
     <title>Title</title>
 </head>
 <body>
-
+<div class="formCenter">
+    <div class="form">
+        <h1>DEJA TU CONSULTA!</h1>
+        <form id="mediumForm">
+            <div class="column">
+                <label> Nombre:</label>
+                <input type="text" id="nameForm" placeholder="Nombre" required>
+            </div>
+            <div>
+                <label> Email:</label>
+                <input type="text" id="validateEmail" placeholder="Email" required>
+            </div>
+            <div class="column">
+                <label> Comentario:</label>
+                <textarea name="comment" id="textArea" cols="50" rows="15"></textarea>
+            </div>
+            <button onclick="validateForm()">Enviar</button>
+        </form>
+    </div>
+</div>
+<script src="JS/funcionalidad.js"></script>
 </body>
 </html>
