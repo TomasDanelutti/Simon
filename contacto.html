@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
 </head>
 <body>
-<div class="formCenter">
-    <div class="form">
+<div>
         <h1>DEJA TU CONSULTA!</h1>
-        <form id="mediumForm">
-            <div class="column">
+        <form>
+            <div>
                 <label> Nombre:</label>
                 <input type="text" id="nameForm" placeholder="Nombre" required>
             </div>
@@ -17,14 +18,14 @@
                 <label> Email:</label>
                 <input type="text" id="validateEmail" placeholder="Email" required>
             </div>
-            <div class="column">
+            <div>
                 <label> Comentario:</label>
                 <textarea name="comment" id="textArea" cols="50" rows="15"></textarea>
             </div>
             <button onclick="validateForm()">Enviar</button>
         </form>
-    </div>
 </div>
+<a href="index.html">Volver</a>
 <script src="JS/funcionalidad.js"></script>
 </body>
 </html>
