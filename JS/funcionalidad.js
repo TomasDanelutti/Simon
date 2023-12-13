@@ -97,12 +97,12 @@ for(var i = 0; i < buttons.length; i++) {
 function validateForm(){
   var name = document.getElementById('nameForm').value;
   var email = document.getElementById('validateEmail').value;
-  var coment = document.getElementById('textArea').value;
+  var comentario = document.getElementById('textArea').value;
   var validName = /^[A-Za-z\s]+$/.test(name);
   var emailValid = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(email);
   var destinatario ='tomasdanelutti12@gmail.com';
   var affair = 'Consulta desde el formulario de la página';
-  var mailtoLink = 'mailto:' + destinatario + '?subject=' + encodeURIComponent(affair) + '&body=' + encodeURIComponent(coment);
+  var mailtoLink = 'mailto:' + destinatario + '?subject=' + encodeURIComponent(affair) + '&body=' + encodeURIComponent(comentario);
 
   if (!validName){
     alert('Ingrese un nombre válido');
