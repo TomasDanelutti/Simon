@@ -9,13 +9,14 @@
 <body>
 <h1>Simon</h1>
 <div>
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre">
+    <label for="namePlayer">Nombre:</label>
+    <input type="text" id="namePlayer">
+    <label id="namePlayerErrorLabel" class="error-label">Ingrese un nombre válido</label>
 </div>
 <button id="start">Comenzar</button>
-<div>
-    <p id="puntos">Puntaje: 0</p>
-    <p id="nivel">Nivel actual: 0</p>
+<div class="scoreboard">
+    <p id="score">Puntaje: 0</p>
+    <p id="level">Nivel actual: 0</p>
 </div>
 <div id="game-board">
     <button class="game-button" id="red"></button>
@@ -23,8 +24,17 @@
     <button class="game-button" id="blue"></button>
     <button class="game-button" id="yellow"></button>
 </div>
-<a href="contacto.html">Contacto</a>
-<a href="https://github.com/TomasDanelutti/Simon">GitHub Repository</a>
+<div class="botones">
+    <button onclick="window.location.href='contacto.html'">Contacto</button>
+    <button onclick="window.open('https://github.com/TomasDanelutti/Simon', '_blank')">GitHub Repository</button>
+</div>
+<!-- Modal de error -->
+<div id="modalError" class="modal">
+    <div class="modal-content">
+        <p id="mensajeError"></p>
+        <button id="aceptar">Aceptar</button>
+    </div>
+</div>
 <script src="JS/funcionalidad.js"></script>
 </body>
 </html>

@@ -11,21 +11,24 @@
         <h1>DEJA TU CONSULTA!</h1>
         <form>
             <div>
-                <label> Nombre:</label>
+                <label for="nameForm">Nombre:</label>
                 <input type="text" id="nameForm" placeholder="Nombre" required>
+                <label id="nameErrorLabel" class="error-label">Ingrese un nombre válido</label>
             </div>
             <div>
                 <label> Email:</label>
                 <input type="text" id="validateEmail" placeholder="Email" required>
+                <label id="emailErrorLabel" class="error-label">Ingrese un nombre válido</label>
             </div>
             <div>
                 <label> Comentario:</label>
                 <textarea name="commentario" id="textArea" cols="50" rows="15"></textarea>
+                <label id="comentarioErrorLabel" class="error-label">Ingrese un nombre válido</label>
             </div>
             <button onclick="validateForm()">Enviar</button>
         </form>
 </div>
-<a href="index.html">Volver</a>
+<button onclick="window.location.href='index.html'">Volver</button>
 <script src="JS/funcionalidad.js"></script>
 </body>
 </html>
